@@ -1,0 +1,480 @@
+@import './mixins.scss';
+@import './variables.scss';
+@import './iconns.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Lora:wght@700&family=Quicksand:wght@400;500;700&family=Roboto+Slab:wght@400;700&display=swap');
+
+
+* {
+    text-decoration: none;
+    list-style-type: none;
+    color: $black;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-1{
+    background: no-repeat url(../imgs/bg_1.jpg);
+    background-size: 100%;
+}
+
+.menu {
+    padding: 20px 30px;
+    @include flex(center, space-around, 0, row); 
+}
+
+.header {
+    background-color: $black0pasity;
+
+    &__name {
+        color: $white;
+    }
+
+    &__nav {
+        li {
+            color: $white;
+        }
+    }
+
+    &__social {
+        span {
+            color: $white;
+        }
+    }
+}
+
+button{
+    background-color:$green;
+    border: none;
+}
+
+.time{
+    @include flex(center,center,0, column);
+    padding: 150px 200px 0 200px ; 
+    &_card{
+        @include flex(center, center, 0, column);
+        width: 95%;
+        background-color:$black0pasity;
+        &_title{
+            @include Lora(65px, 75px, 700);
+            text-transform: uppercase;
+            text-align: center;
+            color: $white;
+            padding: 24px 47px 0 31px;
+        }
+        &_text{
+            @include Lato(18px, normal, 400);
+            color: $white;
+            padding: 30px 0; 
+        }
+        >.button_time{
+            @include Lato(13px, 19px, 900);
+            width: 265px;
+            height:50px;
+            text-transform: uppercase;
+            color:$white;
+            margin-bottom: 48px;
+            text-align: center;
+        }
+    }
+    .airplane{
+        width: 55px;
+        padding-top: 35px;
+        padding-bottom: 80px;
+    }
+}
+
+.about{
+    @include flex(center, center, 0, column);
+    padding-top: 144px;
+    &__title{
+        @include RobotoSlab(56px, 74px, 700);
+        text-transform: uppercase;
+    }
+
+    &__text{
+        padding-top: 32px;
+        @include Quicksand(20px, 32px, 500);
+        text-align: center;
+        width: 70%;
+    }
+    .card1{
+        padding-left: 120px;
+    }
+
+    .card2{
+        width: 20%;
+    }
+
+    .card3{
+        width: 20%;
+    }
+
+    .card4{
+        width: 20%;
+        padding-right: 95px;
+    }
+    .cards{    
+        @include flex(center, space-between, 50px, row);
+        width: 100%;
+        padding-top: 153px;
+        padding-bottom: 124px;
+
+        .about_card{
+            @include flex(center,none, 20px, column);
+            }
+            .card_text{
+                @include Quicksand(32px, 32px, 400);
+                text-align: center;
+                width: 70%;
+            }
+            
+            .text3{
+                width: 90%;
+            }
+
+            .text4{
+                width: 90%;
+            }
+
+            .about_svg{
+                position: relative;
+                &::before{
+                    
+                    position: absolute;
+                    z-index: -1;
+                    top: -65px;
+                    @include RobotoSlab(110px, normal, 700);
+                    color: #1ED400;
+                    text-transform: uppercase;
+                }
+            }
+
+            .about_svg.svg1{
+                &::before{
+                    content: '4670';
+                    right: -66px;
+                }
+            }
+
+            .about_svg.svg2{
+                &::before{
+                    content: '65%';
+                    right: -38px;
+                }
+            }
+
+            .about_svg.svg3{
+                &::before{
+                    content: '148';
+                    right: -35px;
+                }
+            }
+
+            .about_svg.svg4{
+                &::before{
+                    content: '11';
+                    right: 7px;
+                }
+            }
+    }
+}
+
+.barcelona{
+    background: no-repeat url(../imgs/barcelona.jpg);
+    background-size: 100%;
+    @include flex(center,center,0, column);
+    &_title1{
+        @include RobotoSlab(44px, 45px, 700);
+        color: $white;
+        text-transform: uppercase;
+        padding-top: 55px;
+    }
+    &_title2{
+        @include RobotoSlab(112px, 100px, 700);
+        color: $white;
+        text-transform: uppercase;
+        padding-top: 16px;
+    }
+    &_date{
+        @include Quicksand(20px, 18px, 500);
+        color: $white;
+        text-transform: uppercase;
+        padding-top: 16px;
+    }
+
+    &_text{
+        @include Quicksand(19px, 25px, 400);
+        text-align: center;
+        color: $white;
+        padding-top: 32px;
+        width: 56%;
+        @include flex(center,center,0, column);
+        &::after{
+            content:"";
+            display: block;
+            width: 250px;
+            height: 3px;
+            background-color: $white;
+            align-items: center;
+            margin-top: 16px;
+        }
+    }
+
+    &_discount{
+        @include Quicksand(22px, 32px, 500);
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 25px;
+        color: $white;
+    }
+    &_buttom{
+        width: 200px;
+        height: 44px;
+        @include Quicksand(16px, 18px, 700);
+        margin:24px 0 75px 0;
+        color: $white;
+    }
+}
+
+.ways{
+    background-color: $white;
+    padding: 100px 150px 72px 150px;
+    @include flex(center, center, 0, column);
+    &_title{
+        @include RobotoSlab(44px, 45px, 700);
+        text-transform: uppercase;
+        color: $black;
+    }
+
+    &_cards{
+        @include flex(center, space-between, 40px, row);
+        padding-top: 40px;
+        width: 100%;
+
+        &_content{
+            
+            height:255px;
+            width: 380px;
+            &_text{
+                display: inline-block;
+                color: $white;
+                background-color:$black0pasity;
+                @include RobotoSlab(13px, 13px, 400);
+                margin-top: 15px;
+                padding: 5px 8px;
+            }
+        }
+        .content1{
+            background: no-repeat url(../imgs/praga.jpg);
+            background-size: 100%;
+        }
+        .content2{
+            background: no-repeat url(../imgs/portugal.jpg);
+            background-size: 100%;
+           } 
+        
+        .content3{
+            background: no-repeat url(../imgs/dubai.jpg);
+            background-size: 100%;
+           } 
+    }
+    &_button{
+        width: 200px;
+        height: 44px;
+        @include Quicksand(16px, 18px, 700);
+        margin-top: 45px;
+        color: $white;
+    }
+    &_inst{
+        @include Quicksand(12px, 16px, 500);
+        text-align: center;
+        color: $black;
+        margin-top: 8px;
+        width: 100%;
+    }
+    &_icon{
+        padding-top: 6px;
+        max-width: 30px;
+    }
+}
+
+
+.travel{
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: no-repeat url(../imgs/bg_travel.jpg);
+        background-size: 100%;
+        mix-blend-mode: multiply;
+        z-index: -1;
+    }
+    
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $green0pasity;
+        z-index: -2;
+    }
+    &_card{
+        @include flex(center, center, 0, column);
+        padding: 48px 150px 55px 150px;
+
+    &_title{
+        @include RobotoSlab(44px, 45px, 700);
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    &_cards{
+        @include flex(center, space-between, 80px, row);
+        padding-top: 40px;
+        width: 100%;
+
+        &_content{
+            width: 380px;
+            height: 255px;
+            @include flex(center,center, 0px, row);
+            &::before{
+                display: inline-block;
+                color: $white;
+                background-color:$black0pasity;
+                @include Lato(11px, 17px, 500);
+                padding: 1px 5px;
+            }
+            &_img1{
+                width: 340px;
+                height: 230px;
+            }
+            &_img2{
+                width: 380px;
+                height: 255px;
+            }
+
+            &_img3{
+                width: 340px;
+                height: 230px;
+            }
+            &.content1{
+                &.travel_svg{
+                    @include flex(center, center,0, none);
+                }
+                &::before{
+                    position: absolute;
+                    top: 35%;
+                    left: 10%;
+                    content:"Incredible Thailand";
+                }
+                &::after{
+                    position: absolute;
+                    content: "";
+                    background: no-repeat url(../imgs/play-button.svg);
+                    width: 35px; 
+                    height: 35px;
+                }
+            }
+
+            &.content2{
+                &::before{
+                    position: absolute;
+                    top: 32%;
+                    left: 38%;
+                    content:"Our story for 90 seconds";   
+                }
+                &::after{
+                    position: absolute;
+                    content: "";
+                    background: no-repeat url(../imgs/play-button.svg);
+                    width: 35px; 
+                    height: 35px;
+                }
+            }
+
+            &.content3{
+                &::before{
+                    position: absolute;
+                    top: 35%;
+                    right: 23%;
+                    content:"Unexplored Aurora’s Light";   
+                }
+                &::after{
+                    position: absolute;
+                    content: "";
+                    background: no-repeat url(../imgs/play-button.svg);
+                    width: 35px; 
+                    height: 35px;
+                }
+            }
+        }
+    }
+    &_button{
+        width: 200px;
+        height: 44px;
+        @include Quicksand(16px, 18px, 700);
+        margin-top: 45px;
+        color: $white;
+    }
+    }
+}
+
+
+.footer {
+    background: no-repeat url(../imgs/footer_bg.jpg);
+    background-size: cover;
+    min-height: 100px;
+
+    &__name {
+        color: $black;
+    }
+
+    &__nav {
+        li {
+            color: $black;
+        }
+    }
+
+    &__social {
+        span {
+            color: $black;
+        }
+    }
+}
+
+.name {
+    @include RobotoSlab(25px, 25px, 700);
+}
+
+.nav {
+    menu {
+        @include flex(center, center, 56px, row);
+    }
+
+    &__link{
+        @include Lato(19px, 26px, 500);
+    }
+}
+
+.langBar {
+        @include flex(center, center, 5px, row);
+        svg {
+            fill: $white;
+        }
+    }
+
+.social {
+    menu {
+        @include flex(center, center, 20px, row);
+    }
+
+    &__link{
+        font-size: 24px;
+    }
+}

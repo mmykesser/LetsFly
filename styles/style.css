@@ -1,0 +1,608 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Lora:wght@700&family=Quicksand:wght@400;500;700&family=Roboto+Slab:wght@400;700&display=swap");
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot") format("embedded-opentype"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e900";
+}
+
+.icon-twitter:before {
+  content: "\e901";
+}
+
+.icon-vk:before {
+  content: "\e902";
+}
+
+.icon-youtube:before {
+  content: "\e903";
+}
+
+* {
+  text-decoration: none;
+  list-style-type: none;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-1 {
+  background: no-repeat url(../imgs/bg_1.jpg);
+  background-size: 100%;
+}
+
+.menu {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0;
+  flex-direction: row;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.header__name {
+  color: #fff;
+}
+.header__nav li {
+  color: #fff;
+}
+.header__social span {
+  color: #fff;
+}
+
+button {
+  background-color: #1ed400;
+  border: none;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-direction: column;
+  padding: 150px 200px 0 200px;
+}
+.time_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-direction: column;
+  width: 95%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.time_card_title {
+  font-family: "Lora", serif;
+  font-style: normal;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  padding: 24px 47px 0 31px;
+}
+.time_card_text {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  color: #fff;
+  padding: 30px 0;
+}
+.time_card > .button_time {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 19px;
+  width: 265px;
+  height: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 48px;
+  text-align: center;
+}
+.time .airplane {
+  width: 55px;
+  padding-top: 35px;
+  padding-bottom: 80px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-direction: column;
+  padding-top: 144px;
+}
+.about__title {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 74px;
+  text-transform: uppercase;
+}
+.about__text {
+  padding-top: 32px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  width: 70%;
+}
+.about .card1 {
+  padding-left: 120px;
+}
+.about .card2 {
+  width: 20%;
+}
+.about .card3 {
+  width: 20%;
+}
+.about .card4 {
+  width: 20%;
+  padding-right: 95px;
+}
+.about .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 153px;
+  padding-bottom: 124px;
+}
+.about .cards .about_card {
+  display: flex;
+  align-items: center;
+  justify-content: none;
+  gap: 20px;
+  flex-direction: column;
+}
+.about .cards .card_text {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  width: 70%;
+}
+.about .cards .text3 {
+  width: 90%;
+}
+.about .cards .text4 {
+  width: 90%;
+}
+.about .cards .about_svg {
+  position: relative;
+}
+.about .cards .about_svg::before {
+  position: absolute;
+  z-index: -1;
+  top: -65px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-size: 110px;
+  font-weight: 700;
+  line-height: normal;
+  color: #1ED400;
+  text-transform: uppercase;
+}
+.about .cards .about_svg.svg1::before {
+  content: "4670";
+  right: -66px;
+}
+.about .cards .about_svg.svg2::before {
+  content: "65%";
+  right: -38px;
+}
+.about .cards .about_svg.svg3::before {
+  content: "148";
+  right: -35px;
+}
+.about .cards .about_svg.svg4::before {
+  content: "11";
+  right: 7px;
+}
+
+.barcelona {
+  background: no-repeat url(../imgs/barcelona.jpg);
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-direction: column;
+}
+.barcelona_title1 {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 45px;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 55px;
+}
+.barcelona_title2 {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-size: 112px;
+  font-weight: 700;
+  line-height: 100px;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 16px;
+}
+.barcelona_date {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 16px;
+}
+.barcelona_text {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  padding-top: 32px;
+  width: 56%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-direction: column;
+}
+.barcelona_text::after {
+  content: "";
+  display: block;
+  width: 250px;
+  height: 3px;
+  background-color: #fff;
+  align-items: center;
+  margin-top: 16px;
+}
+.barcelona_discount {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 25px;
+  color: #fff;
+}
+.barcelona_buttom {
+  width: 200px;
+  height: 44px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  margin: 24px 0 75px 0;
+  color: #fff;
+}
+
+.ways {
+  background-color: #fff;
+  padding: 100px 150px 72px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-direction: column;
+}
+.ways_title {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #000;
+}
+.ways_cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-direction: row;
+  padding-top: 40px;
+  width: 100%;
+}
+.ways_cards_content {
+  height: 255px;
+  width: 380px;
+}
+.ways_cards_content_text {
+  display: inline-block;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13px;
+  margin-top: 15px;
+  padding: 5px 8px;
+}
+.ways_cards .content1 {
+  background: no-repeat url(../imgs/praga.jpg);
+  background-size: 100%;
+}
+.ways_cards .content2 {
+  background: no-repeat url(../imgs/portugal.jpg);
+  background-size: 100%;
+}
+.ways_cards .content3 {
+  background: no-repeat url(../imgs/dubai.jpg);
+  background-size: 100%;
+}
+.ways_button {
+  width: 200px;
+  height: 44px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-top: 45px;
+  color: #fff;
+}
+.ways_inst {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  color: #000;
+  margin-top: 8px;
+  width: 100%;
+}
+.ways_icon {
+  padding-top: 6px;
+  max-width: 30px;
+}
+
+.travel {
+  position: relative;
+}
+.travel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: no-repeat url(../imgs/bg_travel.jpg);
+  background-size: 100%;
+  mix-blend-mode: multiply;
+  z-index: -1;
+}
+.travel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(30, 212, 0, 0.4);
+  z-index: -2;
+}
+.travel_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-direction: column;
+  padding: 48px 150px 55px 150px;
+}
+.travel_card_title {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.travel_card_cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  flex-direction: row;
+  padding-top: 40px;
+  width: 100%;
+}
+.travel_card_cards_content {
+  width: 380px;
+  height: 255px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+  flex-direction: row;
+}
+.travel_card_cards_content::before {
+  display: inline-block;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 17px;
+  padding: 1px 5px;
+}
+.travel_card_cards_content_img1 {
+  width: 340px;
+  height: 230px;
+}
+.travel_card_cards_content_img2 {
+  width: 380px;
+  height: 255px;
+}
+.travel_card_cards_content_img3 {
+  width: 340px;
+  height: 230px;
+}
+.travel_card_cards_content.content1.travel_svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-direction: none;
+}
+.travel_card_cards_content.content1::before {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  content: "Incredible Thailand";
+}
+.travel_card_cards_content.content1::after {
+  position: absolute;
+  content: "";
+  background: no-repeat url(../imgs/play-button.svg);
+  width: 35px;
+  height: 35px;
+}
+.travel_card_cards_content.content2::before {
+  position: absolute;
+  top: 32%;
+  left: 38%;
+  content: "Our story for 90 seconds";
+}
+.travel_card_cards_content.content2::after {
+  position: absolute;
+  content: "";
+  background: no-repeat url(../imgs/play-button.svg);
+  width: 35px;
+  height: 35px;
+}
+.travel_card_cards_content.content3::before {
+  position: absolute;
+  top: 35%;
+  right: 23%;
+  content: "Unexplored Aurora’s Light";
+}
+.travel_card_cards_content.content3::after {
+  position: absolute;
+  content: "";
+  background: no-repeat url(../imgs/play-button.svg);
+  width: 35px;
+  height: 35px;
+}
+.travel_card_button {
+  width: 200px;
+  height: 44px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-top: 45px;
+  color: #fff;
+}
+
+.footer {
+  background: no-repeat url(../imgs/footer_bg.jpg);
+  background-size: cover;
+  min-height: 100px;
+}
+.footer__name {
+  color: #000;
+}
+.footer__nav li {
+  color: #000;
+}
+.footer__social span {
+  color: #000;
+}
+
+.name {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.nav menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+  flex-direction: row;
+}
+.nav__link {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.langBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-direction: row;
+}
+.langBar svg {
+  fill: #fff;
+}
+
+.social menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: row;
+}
+.social__link {
+  font-size: 24px;
+}/*# sourceMappingURL=style.css.map */
