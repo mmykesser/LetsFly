@@ -18,8 +18,8 @@
 }
 
 .menu {
-    padding: 20px 30px;
-    @include flex(center, space-around, 0, row); 
+    padding: 20px 0;
+    @include flex(center, space-evenly, 7%, row); 
 }
 
 .header {
@@ -172,8 +172,9 @@ button{
 
             .about_svg.svg4{
                 &::before{
-                    content: '11';
-                    right: 7px;
+                    content: "11";
+                    right: 10px;
+                    top: -60%;
                 }
             }
     }
